@@ -46,7 +46,13 @@
     nav a.nav-link {
       color: #cbd5e1;
       font-weight: 600;
+      font-size: 1.5rem; /* Agrandir un peu les icônes */
       transition: color 0.3s ease;
+      padding: 0 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
 
     nav a.nav-link:hover,
@@ -138,14 +144,14 @@
     <nav class="navbar navbar-expand-md justify-content-center" aria-label="Navigation principale">
       <div class="container-fluid justify-content-center">
         <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
-          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#qualites">Qualités</a></li>
-          <li class="nav-item"><a class="nav-link" href="#langues">Langues</a></li>
-          <li class="nav-item"><a class="nav-link" href="#interets">Centres d’intérêt</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#parcours" aria-label="Parcours">🎓</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences" aria-label="Compétences">💻</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets" aria-label="Projets">🧠</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences" aria-label="Expériences">💼</a></li>
+          <li class="nav-item"><a class="nav-link" href="#qualites" aria-label="Qualités">🌱</a></li>
+          <li class="nav-item"><a class="nav-link" href="#langues" aria-label="Langues">🌍</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interets" aria-label="Centres d’intérêt">🎯</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" aria-label="Contact">📄</a></li>
         </ul>
       </div>
     </nav>
@@ -235,19 +241,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Mise à jour des liens nav actifs selon la section visible avec aria-current
+    // Mise à jour des liens nav actifs selon la section visible
     const sections = document.querySelectorAll("main section");
     const navLinks = document.querySelectorAll("nav a.nav-link");
 
     function activateNavLink() {
       let index = sections.length;
 
-      while (--index && window.scrollY + window.innerHeight / 3 < sections[index].offsetTop) {}
+      while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
 
       navLinks.forEach((link) => {
         link.classList.remove("active");
         link.removeAttribute("aria-current");
       });
+
       navLinks[index].classList.add("active");
       navLinks[index].setAttribute("aria-current", "page");
     }
