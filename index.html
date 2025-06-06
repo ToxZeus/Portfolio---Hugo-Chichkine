@@ -34,6 +34,15 @@
       font-weight: 500;
     }
 
+    /* NAVIGATION FIXE EN HAUT */
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      background-color: #1e3a8a;
+      z-index: 999;
+      padding: 0.5rem 0;
+    }
+
     nav a.nav-link {
       color: #cbd5e1;
       font-weight: 600;
@@ -43,7 +52,15 @@
     nav a.nav-link:hover,
     nav a.nav-link.active {
       color: white !important;
-      text-decoration: underline;
+      text-decoration: none;
+      border-bottom: 3px solid #ffc107; /* bordure jaune vif */
+      font-weight: 700;
+    }
+
+    /* Focus visible pour accessibilité */
+    nav a.nav-link:focus {
+      outline: 3px solid #ffc107;
+      outline-offset: 2px;
     }
 
     main {
@@ -208,21 +225,37 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Mise à jour des liens nav actifs selon la section visible
+    // Mise à jour des liens nav actifs selon la section visible avec aria-current
     const sections = document.querySelectorAll("main section");
     const navLinks = document.querySelectorAll("nav a.nav-link");
 
     function activateNavLink() {
       let index = sections.length;
 
-      while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+      while (--index && window.scrollY + window.innerHeight / 3 < sections[index].offsetTop) {}
 
-      navLinks.forEach((link) => link.classList.remove("active"));
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        link.removeAttribute("aria-current");
+      });
       navLinks[index].classList.add("active");
+      navLinks[index].setAttribute("aria-current", "page");
     }
 
     activateNavLink();
     window.addEventListener("scroll", activateNavLink);
+
+    // Fermer le menu mobile après clic sur un lien
+    const navLinksMobile = document.querySelectorAll('.navbar-collapse .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinksMobile.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.getComputedStyle(navbarCollapse).display !== 'none') {
+          navbarCollapse.classList.remove('show');
+        }
+      });
+    });
 
     // Bouton retour en haut
     const backToTopBtn = document.getElementById("backToTopBtn");
