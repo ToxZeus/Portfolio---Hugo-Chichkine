@@ -278,9 +278,11 @@
     const navLinks = document.querySelectorAll("nav a.nav-link");
 
     function activateNavLink() {
-      let index = sections.length;
+      let index = sections.length - 1; // commence à la dernière section
 
-      while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+      while (index > 0 && window.scrollY + 150 < sections[index].offsetTop) {
+        index--;
+      }
 
       navLinks.forEach((link) => {
         link.classList.remove("active");
