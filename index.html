@@ -1,34 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hugo Chichkine – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts (optionnel pour un style plus pro) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f8f9fa;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 2rem 0;
+    }
+
+    header h1 {
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    nav a.nav-link {
+      color: #cbd5e1;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a.nav-link:hover,
+    nav a.nav-link.active {
+      color: white !important;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      border-bottom: 3px solid #1e3a8a;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: #374151;
+      margin-top: 1.5rem;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✅ ";
+      color: #198754;
+      font-weight: 700;
+    }
+
+    a {
+      color: #0d6efd;
+    }
+
+    footer {
+      background-color: #e5e7eb;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Bouton retour en haut */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 15px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    #backToTopBtn:hover {
+      background-color: #374b9b;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
+
+  <header class="text-center">
     <h1>Hugo Chichkine</h1>
     <p>Étudiant en BUT Informatique – IUT d'Orsay, Université Paris-Saclay</p>
-    <nav>
-      <a href="#parcours">Parcours</a>
-      <a href="#competences">Compétences</a>
-      <a href="#projets">Projets</a>
-      <a href="#experiences">Expériences</a>
-      <a href="#qualites">Qualités</a>
-      <a href="#interets">Centres d’intérêt</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-md justify-content-center" aria-label="Navigation principale">
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#qualites">Qualités</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interets">Centres d’intérêt</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="parcours">
+    <section id="parcours" tabindex="-1">
       <h2>🎓 Parcours Académique</h2>
       <p><strong>BUT Informatique</strong> – IUT d'Orsay, Université Paris-Saclay (2022–2025)</p>
       <p>Parcours RAC – Réalisation d’Applications : Conception, Développement, Validation</p>
     </section>
 
-    <section id="competences">
+    <section id="competences" tabindex="-1">
       <h2>💻 Compétences Techniques</h2>
       <ul>
         <li><strong>Langages :</strong> Java, PHP, SQL, HTML/CSS, JavaScript</li>
@@ -37,7 +149,7 @@
       </ul>
     </section>
 
-    <section id="projets">
+    <section id="projets" tabindex="-1">
       <h2>🧠 Projets</h2>
       <h3>Robot Joueur d’Échecs</h3>
       <p>Développement logiciel, gestion de projet Agile avec GitLab, documentation technique complète.</p>
@@ -46,18 +158,18 @@
       <p>Développement d'interfaces HTML/PHP connectées à une base de données, analyses fonctionnelles et techniques.</p>
     </section>
 
-    <section id="experiences">
+    <section id="experiences" tabindex="-1">
       <h2>💼 Expériences Professionnelles</h2>
       <h3>Quandela – Développeur Web</h3>
-      <p><em>Mai–Août 2024, Janvier–Mai 2025</em><br>
-      Développement d’une application de gestion de consommation cloud, travail en autonomie et en équipe.</p>
+      <p><em>Mai–Août 2024, Janvier–Mai 2025</em><br />
+        Développement d’une application de gestion de consommation cloud, travail en autonomie et en équipe.</p>
 
       <h3>Mairie de Champlan – Animateur BAFA</h3>
-      <p><em>Depuis 2023</em><br>
-      Animation en centre de loisirs, école primaire, encadrement de séances de tennis pour les jeunes.</p>
+      <p><em>Depuis 2023</em><br />
+        Animation en centre de loisirs, école primaire, encadrement de séances de tennis pour les jeunes.</p>
     </section>
 
-    <section id="qualites">
+    <section id="qualites" tabindex="-1">
       <h2>🌱 Qualités Développées</h2>
       <ul>
         <li>Autonomie dans la gestion de projets</li>
@@ -67,7 +179,7 @@
       </ul>
     </section>
 
-    <section id="interets">
+    <section id="interets" tabindex="-1">
       <h2>🎯 Centres d’intérêt</h2>
       <ul>
         <li>Informatique : e-sport, jeux vidéo, programmation</li>
@@ -76,17 +188,57 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" tabindex="-1">
       <h2>📄 CV & Contact</h2>
-      <p><a href="CV_CHICHKINE_HUGO.pdf" target="_blank">📎 Télécharger mon CV (PDF)</a></p>
+      <p><a href="CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener noreferrer">📎 Télécharger mon CV (PDF)</a></p>
       <p>📧 <a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a></p>
       <p>📱 +33 6 51 39 58 99</p>
-      <p>🔗 <a href="https://www.linkedin.com/in/hugo-chichkine?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn – hugo-chichkine</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/hugo-chichkine?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn – hugo-chichkine</a></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Hugo Chichkine</p>
   </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="backToTopBtn" aria-label="Retour en haut">⬆️</button>
+
+  <!-- Bootstrap JS Bundle avec Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Mise à jour des liens nav actifs selon la section visible
+    const sections = document.querySelectorAll("main section");
+    const navLinks = document.querySelectorAll("nav a.nav-link");
+
+    function activateNavLink() {
+      let index = sections.length;
+
+      while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+
+      navLinks.forEach((link) => link.classList.remove("active"));
+      navLinks[index].classList.add("active");
+    }
+
+    activateNavLink();
+    window.addEventListener("scroll", activateNavLink);
+
+    // Bouton retour en haut
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
+
 </html>
