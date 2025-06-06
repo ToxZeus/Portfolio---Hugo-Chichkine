@@ -46,14 +46,15 @@
     nav a.nav-link {
       color: #cbd5e1;
       font-weight: 600;
-      font-size: 1.5rem; /* Agrandir un peu les icônes */
+      font-size: 1.5rem;
       transition: color 0.3s ease;
-      padding: 0 0.75rem;
+      padding: 0 0.75rem 0.3rem 0.75rem; /* ajout padding bottom pour faire de la place à la bordure */
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      border-bottom: none; /* Par défaut pas de bordure */
+      border-bottom: none;
+      position: relative; /* important pour que border-bottom s'affiche bien */
     }
 
     nav a.nav-link:hover {
