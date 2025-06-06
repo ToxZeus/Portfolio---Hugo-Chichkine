@@ -53,14 +53,20 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
+      border-bottom: none; /* Par défaut pas de bordure */
     }
 
-    nav a.nav-link:hover,
-    nav a.nav-link.active {
+    nav a.nav-link:hover {
       color: white !important;
       text-decoration: none;
-      border-bottom: 3px solid #ffc107; /* bordure jaune vif */
+      border-bottom: 3px solid #ffc107; /* bordure jaune vif au hover */
       font-weight: 700;
+    }
+
+    nav a.nav-link.active {
+      color: #e0e7ff !important; /* bleu très clair, moins fort que blanc */
+      font-weight: 600; /* un peu moins gras que hover */
+      border-bottom: none; /* pas de bordure quand actif */
     }
 
     /* Focus visible pour accessibilité */
