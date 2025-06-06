@@ -48,16 +48,16 @@
       color: var(--primary-light);
     }
 
-    /* Affichage bilingue */
-    .lang-en {
+    /* Affichage bilingue : on cible seulement les <span> (ou tout élément porteur de ces classes) */
+    span.lang-en {
       display: none;
     }
 
-    body.lang-en .lang-fr {
+    body.lang-en span.lang-fr {
       display: none;
     }
 
-    body.lang-en .lang-en {
+    body.lang-en span.lang-en {
       display: inline;
     }
 
@@ -100,7 +100,7 @@
       font-weight: 300;
     }
 
-    /* BOUTON LANGUE */
+    /* BOUTON DE CHANGEMENT DE LANGUE */
     #langSwitcher {
       position: absolute;
       top: 1rem;
@@ -210,16 +210,15 @@
 
     .card-header-custom {
       background-color: var(--primary-color);
-      color: white; /* si jamais un élément hérite autrement */
+      color: white;
       border-bottom: none;
       border-top-left-radius: 0.75rem;
       border-top-right-radius: 0.75rem;
     }
 
-    /* → on force le h3 à être blanc dans la card-header */
     .card-header-custom h3 {
       color: white;
-      margin: 0; /* supprime marge par défaut si besoin */
+      margin: 0;
     }
 
     .card-body-custom {
@@ -458,14 +457,14 @@
           <div class="card card-custom h-100">
             <div class="card-header card-header-custom">
               <h3>
-                <span class="lang-fr">Outils &amp; Méthodes</span>
-                <span class="lang-en">Tools &amp; Practices</span>
+                <span class="lang-fr">Outils & Méthodes</span>
+                <span class="lang-en">Tools & Practices</span>
               </h3>
             </div>
             <div class="card-body card-body-custom">
               <ul>
                 <li><span class="lang-fr">GitLab</span><span class="lang-en">GitLab</span></li>
-                <li><span class="lang-fr">IntelliJ IDEA &amp; VS Code</span><span class="lang-en">IntelliJ IDEA &amp; VS Code</span></li>
+                <li><span class="lang-fr">IntelliJ IDEA & VS Code</span><span class="lang-en">IntelliJ IDEA & VS Code</span></li>
                 <li><span class="lang-fr">phpMyAdmin</span><span class="lang-en">phpMyAdmin</span></li>
                 <li><span class="lang-fr">Marionnet</span><span class="lang-en">Marionnet</span></li>
                 <li><span class="lang-fr">Méthode Agile, gestion de projet, documentation technique</span><span class="lang-en">Agile methodology, project management, technical documentation</span></li>
@@ -616,7 +615,7 @@
     <section id="qualites" tabindex="-1">
       <h2>🌱 
         <span class="lang-fr">Qualités Développées</span>
-        <span class="lang-en">Strengths &amp; Soft Skills</span>
+        <span class="lang-en">Strengths & Soft Skills</span>
       </h2>
       <div class="card card-custom">
         <div class="card-body card-body-custom">
@@ -639,9 +638,30 @@
       <div class="card card-custom">
         <div class="card-body card-body-custom">
           <ul>
-            <li><strong><span class="lang-fr">Français</span><span class="lang-en">French</span> :</strong> <span class="lang-fr">Langue maternelle</span><span class="lang-en">Native</span></li>
-            <li><strong><span class="lang-fr">Anglais</span><span class="lang-en">English</span> :</strong> <span class="lang-fr">Niveau avancé (B2/C1)</span><span class="lang-en">Advanced (B2/C1)</span></li>
-            <li><strong><span class="lang-fr">Allemand</span><span class="lang-en">German</span> :</strong> <span class="lang-fr">Niveau débutant (scolaire)</span><span class="lang-en">Beginner (school level)</span></li>
+            <li>
+              <strong>
+                <span class="lang-fr">Français</span>
+                <span class="lang-en">French</span>
+              </strong> : 
+              <span class="lang-fr">Langue maternelle</span>
+              <span class="lang-en">Native</span>
+            </li>
+            <li>
+              <strong>
+                <span class="lang-fr">Anglais</span>
+                <span class="lang-en">English</span>
+              </strong> : 
+              <span class="lang-fr">Niveau avancé (B2/C1)</span>
+              <span class="lang-en">Advanced (B2/C1)</span>
+            </li>
+            <li>
+              <strong>
+                <span class="lang-fr">Allemand</span>
+                <span class="lang-en">German</span>
+              </strong> : 
+              <span class="lang-fr">Niveau débutant (scolaire)</span>
+              <span class="lang-en">Beginner (school level)</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -656,9 +676,18 @@
       <div class="card card-custom">
         <div class="card-body card-body-custom">
           <ul>
-            <li><span class="lang-fr">Informatique : e-sport, jeux vidéo, projets open source</span><span class="lang-en">Computer Science: e-sports, video games, open-source projects</span></li>
-            <li><span class="lang-fr">Sports mécaniques : Formule 1, WEC, Formule 2</span><span class="lang-en">Motorsports: Formula 1, WEC, Formula 2</span></li>
-            <li><span class="lang-fr">Tennis (pratique loisir et animation)</span><span class="lang-en">Tennis (recreational play and coaching)</span></li>
+            <li>
+              <span class="lang-fr">Informatique : e-sport, jeux vidéo, projets open source</span>
+              <span class="lang-en">Computer Science: e-sports, video games, open-source projects</span>
+            </li>
+            <li>
+              <span class="lang-fr">Sports mécaniques : Formule 1, WEC, Formule 2</span>
+              <span class="lang-en">Motorsports: Formula 1, WEC, Formula 2</span>
+            </li>
+            <li>
+              <span class="lang-fr">Tennis (pratique loisir et animation)</span>
+              <span class="lang-en">Tennis (recreational play and coaching)</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -667,8 +696,8 @@
     <!-- === CONTACT & CV === -->
     <section id="contact" tabindex="-1">
       <h2>📄 
-        <span class="lang-fr">CV &amp; Contact</span>
-        <span class="lang-en">CV &amp; Contact</span>
+        <span class="lang-fr">CV & Contact</span>
+        <span class="lang-en">CV & Contact</span>
       </h2>
       <div class="card card-custom">
         <div class="card-body card-body-custom">
@@ -707,7 +736,7 @@
   <footer>
     <div class="container">
       <p>
-        &copy; 2025 Hugo Chichkine —
+        &copy; 2025 Hugo Chichkine — 
         <span class="lang-fr">Tous droits réservés</span>
         <span class="lang-en">All rights reserved</span>
       </p>
@@ -718,7 +747,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Changer la langue (FR / EN)
+    // Bascule FR / EN
     const langSwitcher = document.getElementById('langSwitcher');
     langSwitcher.addEventListener('click', () => {
       document.body.classList.toggle('lang-en');
@@ -735,14 +764,11 @@
 
     function activateNavLink() {
       let index = sections.length;
-
       while (--index && window.scrollY + 120 < sections[index].offsetTop) {}
-
-      navLinks.forEach((link) => {
+      navLinks.forEach(link => {
         link.classList.remove("active");
         link.removeAttribute("aria-current");
       });
-
       navLinks[index].classList.add("active");
       navLinks[index].setAttribute("aria-current", "page");
     }
@@ -752,15 +778,9 @@
 
     // Bouton retour en haut
     const backToTopBtn = document.getElementById("backToTopBtn");
-
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.style.display = "block";
-      } else {
-        backToTopBtn.style.display = "none";
-      }
+      backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
     });
-
     backToTopBtn.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
