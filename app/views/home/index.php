@@ -27,7 +27,7 @@
                     <span class="lang-en">2025: <strong>Third year at ESGI</strong>, Web Engineering specialization <span class="badge bg-info">Work-study: 3 weeks company / 1 week school</span></span>
                 </li>
                 <li class="mb-3">
-                    <span class="lang-fr">2023-2025 : BUT Informatique, IUT d'Orsay</span>
+                    <span class="lang-fr">2023-2025 : DUT & BUT Informatique, IUT d'Orsay</span>
                     <span class="lang-en">2023-2025: Computer Science, IUT d'Orsay</span>
                 </li>
                 <li class="mb-3">
@@ -125,9 +125,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Anglais — niveau professionnel</li>
-                        <li class="list-group-item">Français — langue natale</li>
-                        <li class="list-group-item">Allemand — niveau scolaire</li>
+                        <li class="list-group-item">🇬🇧 Anglais — niveau professionnel</li>
+                        <li class="list-group-item">🇫🇷 Français — langue natale</li>
+                        <li class="list-group-item">🇩🇪 Allemand — niveau scolaire</li>
                     </ul>
                 </div>
             </div>
@@ -159,12 +159,12 @@
         </div>
     </section>
 </main>
-    <!-- Contact (moved to the end) -->
+    <!-- Contact & CV (moved to the end) -->
     <section id="contact" class="py-5 bg-light border-top">
         <div class="container">
             <h2 class="section-title mb-4 text-center">
-                <span class="lang-fr"><i class="bi bi-envelope"></i> Contact</span>
-                <span class="lang-en"><i class="bi bi-envelope"></i> Contact</span>
+                <span class="lang-fr"><i class="bi bi-envelope"></i> Contact & CV</span>
+                <span class="lang-en"><i class="bi bi-envelope"></i> Contact & Resume</span>
             </h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -176,6 +176,13 @@
                                     <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
                                 </div>
                                 <i class="bi bi-telephone fs-4"></i>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a>
+                                </div>
+                                <i class="bi bi-envelope-at fs-4"></i>
                             </li>
                             <li class="list-group-item d-flex align-items-center justify-content-between">
                                 <div>
