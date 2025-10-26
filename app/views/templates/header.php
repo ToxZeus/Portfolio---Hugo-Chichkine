@@ -26,8 +26,8 @@
         <div class="container">
             <h1>Hugo Chichkine</h1>
             <p>
-                <span class="lang-fr">Étudiant en <strong>BUT Informatique</strong> – IUT d'Orsay, Université Paris-Saclay</span>
-                <span class="lang-en">Computer Science Undergraduate – IUT d'Orsay, University of Paris-Saclay</span>
+                <span class="lang-fr">Étudiant en <strong>ingénierie web</strong> à l'ESGI Paris</span>
+                <span class="lang-en">Web Engineering student at ESGI Paris</span>
             </p>
         </div>
 

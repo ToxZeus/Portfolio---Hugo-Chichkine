@@ -12,8 +12,6 @@
         <div class="container">
             <p>
                 <?php echo date('Y'); ?> © Hugo Chichkine
-                <br>
-                <a href="#contact"><?php echo $translations['contact_me']; ?></a>
             </p>
         </div>
     </footer>

@@ -113,7 +113,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><span class="lang-fr">Stage développeur web chez XYZ</span><span class="lang-en">Web developer internship at XYZ</span></li>
+                        <li class="list-group-item"><span class="lang-fr">Stage développeur web chez Quandela</span><span class="lang-en">Web developer internship at Quandela</span></li>
                         <li class="list-group-item"><span class="lang-fr">Projet associatif : création d'un site web</span><span class="lang-en">Association project: website creation</span></li>
                     </ul>
                 </div>
@@ -183,7 +183,7 @@
     </section>
 
     <!-- Centres d'intérêt -->
-    <section id="interets" class="py-5 bg-light border-bottom">
+    <section id="interets" class="py-5">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-heart"></i> Centres d'intérêt</span>
