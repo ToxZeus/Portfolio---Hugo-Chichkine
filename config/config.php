@@ -6,9 +6,9 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 
 // Application configuration
-// Allow overriding BASE_URL via environment (useful for GitHub Pages)
-$__baseUrl = getenv('BASE_URL') ?: 'http://localhost:8000';
-define('BASE_URL', rtrim($__baseUrl, '/'));
+// Prefer environment variable when available (e.g., in CI)
+$envBaseUrl = getenv('BASE_URL');
+define('BASE_URL', $envBaseUrl !== false && $envBaseUrl !== '' ? rtrim($envBaseUrl, '/') : '');
 define('SITE_NAME', 'Hugo Chichkine - Portfolio');
 
 // Language settings

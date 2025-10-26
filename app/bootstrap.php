@@ -2,17 +2,30 @@
 // Load configuration
 require_once __DIR__ . '/../config/config.php';
 
-// Autoload classes
+// Autoload classes (search common app subfolders)
 spl_autoload_register(function ($className) {
-    $file = __DIR__ . '//' . str_replace('\\', '/', $className) . '.php';
-    if (file_exists($file)) {
-        require_once $file;
+    $normalized = str_replace(['\\', '_'], '/', $className) . '.php';
+    $base = __DIR__;
+    $candidates = [
+        $base . '/' . $normalized,                    // app/Foo.php or namespaced
+        $base . '/controllers/' . basename($normalized), // app/controllers/HomeController.php
+        $base . '/models/' . basename($normalized),      // app/models/Model.php
+        $base . '/views/' . basename($normalized),       // app/views/View.php
+    ];
+    foreach ($candidates as $file) {
+        if (is_file($file)) {
+            require_once $file;
+            return true;
+        }
     }
+    return false;
 });
 
 // Initialize session
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Set error reporting
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', '1');
