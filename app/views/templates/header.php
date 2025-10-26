@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
     
     <!-- Custom CSS -->
-    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="<?php echo BASE_URL; ?>/assets/css/style.css" rel="stylesheet" />
 </head>
 <body class="lang-<?php echo $_SESSION['lang'] ?? 'fr'; ?>">
     <!-- Header / Hero -->

@@ -17,6 +17,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      BASE_URL: https://toxzeus.github.io/Portfolio---Hugo-Chichkine
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
