@@ -28,6 +28,9 @@ function generateLanguageVersion($lang, $outputDir) {
     }
 
     // Capture the output of index.php
+    // Simulate minimal web server vars so Router works in CLI
+    $_SERVER['REQUEST_METHOD'] = 'GET';
+    $_SERVER['REQUEST_URI'] = '/';
     ob_start();
     include __DIR__ . '/index.php';
     $content = ob_get_clean();

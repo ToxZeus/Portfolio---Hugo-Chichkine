@@ -1,3 +1,12 @@
+    <?php
+    // Safe defaults if translations are not provided
+    if (!isset($translations) || !is_array($translations)) {
+        $translations = [
+            'contact_me' => 'Contact',
+            'back_to_top' => 'Back to top',
+        ];
+    }
+    ?>
     <!-- Footer -->
     <footer>
         <div class="container">
