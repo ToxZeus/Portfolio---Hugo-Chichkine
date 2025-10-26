@@ -1,0 +1,12 @@
+# PHP Portfolio - GitHub Pages Configuration
+
+# Les fichiers à ignorer lors du déploiement
+vendor/
+.gitignore
+composer.json
+composer.lock
+*.php
+
+# Les fichiers à inclure dans le déploiement
+!_site/
+!assets/
