@@ -1,7 +1,4 @@
-<?php
-// ...existing code...
-include __DIR__ . '/../templates/header.php';
-?>
+<?php /* View content only; header/footer are handled by View::render */ ?>
 <main>
     <!-- Présentation -->
     <section id="presentation" class="py-5 bg-light border-bottom">
@@ -146,6 +143,3 @@ include __DIR__ . '/../templates/header.php';
         </div>
     </section>
 </main>
-<?php
-include __DIR__ . '/../templates/footer.php';
-?>

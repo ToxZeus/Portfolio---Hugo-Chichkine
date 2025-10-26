@@ -8,7 +8,7 @@ class View {
         require_once __DIR__ . '/templates/header.php';
         
         // Load view file
-        require_once __DIR__ . '/templates/' . $view . '.php';
+        require_once __DIR__ . '/' . $view . '.php';
         
         // Load footer
         require_once __DIR__ . '/templates/footer.php';
