@@ -48,9 +48,18 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML, CSS, JavaScript, PHP</li>
-                        <li class="list-group-item">Bootstrap, Git, SQL</li>
-                        <li class="list-group-item">Développement web fullstack</li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">HTML, CSS, JavaScript, PHP</span>
+                            <span class="lang-en">HTML, CSS, JavaScript, PHP</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">Bootstrap, Git, SQL</span>
+                            <span class="lang-en">Bootstrap, Git, SQL</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">Développement web fullstack</span>
+                            <span class="lang-en">Full‑stack web development</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -67,9 +76,27 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Portfolio Web</strong> <span class="badge bg-secondary">PHP, Bootstrap, JS</span></li>
-                        <li class="list-group-item"><strong>Application de gestion</strong> <span class="badge bg-secondary">SQL, PHP</span></li>
-                        <li class="list-group-item"><strong>Site vitrine</strong> <span class="badge bg-secondary">HTML, CSS, JS</span></li>
+                        <li class="list-group-item">
+                            <strong>
+                                <span class="lang-fr">Portfolio Web</span>
+                                <span class="lang-en">Web Portfolio</span>
+                            </strong>
+                            <span class="badge bg-secondary">PHP, Bootstrap, JS</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>
+                                <span class="lang-fr">Application de gestion</span>
+                                <span class="lang-en">Management application</span>
+                            </strong>
+                            <span class="badge bg-secondary">SQL, PHP</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>
+                                <span class="lang-fr">Site vitrine</span>
+                                <span class="lang-en">Showcase website</span>
+                            </strong>
+                            <span class="badge bg-secondary">HTML, CSS, JS</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -104,10 +131,22 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Curiosité</li>
-                        <li class="list-group-item">Rigueur</li>
-                        <li class="list-group-item">Esprit d'équipe</li>
-                        <li class="list-group-item">Créativité</li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">Curiosité</span>
+                            <span class="lang-en">Curiosity</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">Rigueur</span>
+                            <span class="lang-en">Rigor</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">Esprit d'équipe</span>
+                            <span class="lang-en">Team spirit</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">Créativité</span>
+                            <span class="lang-en">Creativity</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -125,9 +164,18 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">🇬🇧 Anglais — niveau professionnel</li>
-                        <li class="list-group-item">🇫🇷 Français — langue natale</li>
-                        <li class="list-group-item">🇩🇪 Allemand — niveau scolaire</li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">🇬🇧 Anglais — niveau professionnel</span>
+                            <span class="lang-en">🇬🇧 English — professional level</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">🇫🇷 Français — langue natale</span>
+                            <span class="lang-en">🇫🇷 French — native language</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr">🇩🇪 Allemand — niveau scolaire</span>
+                            <span class="lang-en">🇩🇪 German — school level</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -145,13 +193,16 @@
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            Informatique — E-sport, jeux-vidéo, programmation web
+                            <span class="lang-fr">Informatique — E-sport, jeux-vidéo, programmation web</span>
+                            <span class="lang-en">IT — e-sports, video games, web programming</span>
                         </li>
                         <li class="list-group-item">
-                            Sports automobiles — Formule 1, WEC, Formule 2...
+                            <span class="lang-fr">Sports automobiles — Formule 1, WEC, Formule 2...</span>
+                            <span class="lang-en">Motorsport — Formula 1, WEC, Formula 2...</span>
                         </li>
                         <li class="list-group-item">
-                            Tennis
+                            <span class="lang-fr">Tennis</span>
+                            <span class="lang-en">Tennis</span>
                         </li>
                     </ul>
                 </div>
@@ -172,22 +223,34 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex align-items-center justify-content-between">
                                 <div>
-                                    <strong>Téléphone</strong><br>
+                                    <strong>
+                                        <span class="lang-fr">Téléphone</span>
+                                        <span class="lang-en">Phone</span>
+                                    </strong><br>
                                     <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
                                 </div>
                                 <i class="bi bi-telephone fs-4"></i>
                             </li>
                             <li class="list-group-item d-flex align-items-center justify-content-between">
                                 <div>
-                                    <strong>Email</strong><br>
+                                    <strong>
+                                        <span class="lang-fr">Email</span>
+                                        <span class="lang-en">Email</span>
+                                    </strong><br>
                                     <a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a>
                                 </div>
                                 <i class="bi bi-envelope-at fs-4"></i>
                             </li>
                             <li class="list-group-item d-flex align-items-center justify-content-between">
                                 <div>
-                                    <strong>CV (PDF)</strong><br>
-                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+                                    <strong>
+                                        <span class="lang-fr">CV (PDF)</span>
+                                        <span class="lang-en">Resume (PDF)</span>
+                                    </strong><br>
+                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">
+                                        <span class="lang-fr">Télécharger mon CV</span>
+                                        <span class="lang-en">Download my Resume</span>
+                                    </a>
                                 </div>
                                 <i class="bi bi-file-earmark-pdf fs-4"></i>
                             </li>
