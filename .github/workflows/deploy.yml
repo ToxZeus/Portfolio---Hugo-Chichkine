@@ -26,9 +26,14 @@ jobs:
         uses: actions/checkout@v4
 
       # If you have a build step, run it here before uploading the artifact.
-      # - name: Build site
-      #   run: |
-      #     echo "Add your build commands here"
+      # Install PHP and generate static files into ./public using your script
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Generate static site
+        run: php public/generate-static.php
 
       - name: Upload static files
         uses: actions/upload-pages-artifact@v3
