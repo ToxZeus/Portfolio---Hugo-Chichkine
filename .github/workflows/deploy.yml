@@ -16,7 +16,4 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
       with:
-        # Le dossier racine contient directement ton index.html
-        # Si ton site est dans un sous-dossier, spécifie-le ici
-        # default is root, donc pas besoin de préciser si index.html à la racine
-        # folder: './'  # optionnel ici
+        folder: 'public' # Déploie le contenu statique du dossier public/

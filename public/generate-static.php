@@ -4,8 +4,8 @@
 require_once __DIR__ . '/../app/bootstrap.php';
 
 function generateStaticSite() {
-    // Ensure output directory exists
-    $outputDir = __DIR__ . '/../_site';
+    // Ensure output directory exists (public/)
+    $outputDir = __DIR__;
     if (!file_exists($outputDir)) {
         mkdir($outputDir, 0777, true);
     }
