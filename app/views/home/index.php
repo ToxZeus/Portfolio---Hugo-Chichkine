@@ -123,21 +123,75 @@
             </h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form class="card p-4 shadow-sm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label"><span class="lang-fr">Nom</span><span class="lang-en">Name</span></label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label"><span class="lang-fr">Message</span><span class="lang-en">Message</span></label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100"><span class="lang-fr">Envoyer</span><span class="lang-en">Send</span></button>
-                    </form>
+                    <div class="card p-4 shadow-sm">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>Téléphone</strong><br>
+                                    <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
+                                </div>
+                                <i class="bi bi-telephone fs-4"></i>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>CV (PDF)</strong><br>
+                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+                                </div>
+                                <i class="bi bi-file-earmark-pdf fs-4"></i>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>LinkedIn</strong><br>
+                                    <a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a>
+                                </div>
+                                <i class="bi bi-linkedin fs-4"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Langues -->
+    <section id="langues" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">
+                <span class="lang-fr"><i class="bi bi-translate"></i> Langues</span>
+                <span class="lang-en"><i class="bi bi-translate"></i> Languages</span>
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Anglais — niveau professionnel</li>
+                        <li class="list-group-item">Français — langue natale</li>
+                        <li class="list-group-item">Allemand — niveau scolaire</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Centres d'intérêt -->
+    <section id="interets" class="py-5 bg-light border-bottom">
+        <div class="container">
+            <h2 class="section-title mb-4">
+                <span class="lang-fr"><i class="bi bi-heart"></i> Centres d'intérêt</span>
+                <span class="lang-en"><i class="bi bi-heart"></i> Interests</span>
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Informatique — E-sport, jeux-vidéo, programmation web
+                        </li>
+                        <li class="list-group-item">
+                            Sports automobiles — Formule 1, WEC, Formule 2...
+                        </li>
+                        <li class="list-group-item">
+                            Tennis
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
