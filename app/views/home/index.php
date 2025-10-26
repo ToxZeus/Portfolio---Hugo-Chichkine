@@ -114,44 +114,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-light border-bottom">
-        <div class="container">
-            <h2 class="section-title mb-4 text-center">
-                <span class="lang-fr"><i class="bi bi-envelope"></i> Contact</span>
-                <span class="lang-en"><i class="bi bi-envelope"></i> Contact</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card p-4 shadow-sm">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>Téléphone</strong><br>
-                                    <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
-                                </div>
-                                <i class="bi bi-telephone fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>CV (PDF)</strong><br>
-                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
-                                </div>
-                                <i class="bi bi-file-earmark-pdf fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>LinkedIn</strong><br>
-                                    <a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a>
-                                </div>
-                                <i class="bi bi-linkedin fs-4"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Langues -->
     <section id="langues" class="py-5">
@@ -197,3 +159,41 @@
         </div>
     </section>
 </main>
+    <!-- Contact (moved to the end) -->
+    <section id="contact" class="py-5 bg-light border-top">
+        <div class="container">
+            <h2 class="section-title mb-4 text-center">
+                <span class="lang-fr"><i class="bi bi-envelope"></i> Contact</span>
+                <span class="lang-en"><i class="bi bi-envelope"></i> Contact</span>
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card p-4 shadow-sm">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>Téléphone</strong><br>
+                                    <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
+                                </div>
+                                <i class="bi bi-telephone fs-4"></i>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>CV (PDF)</strong><br>
+                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+                                </div>
+                                <i class="bi bi-file-earmark-pdf fs-4"></i>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>LinkedIn</strong><br>
+                                    <a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a>
+                                </div>
+                                <i class="bi bi-linkedin fs-4"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

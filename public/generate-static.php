@@ -16,6 +16,9 @@ function generateStaticSite() {
 
     // Copy assets
     copyAssets($outputDir);
+
+    // Copy CV PDF to the public root so GitHub Pages can serve it
+    copyCvPdf($outputDir);
 }
 
 function generateLanguageVersion($lang, $outputDir) {
@@ -74,6 +77,14 @@ function copyDirectory($source, $destination) {
         }
     }
     $dir->close();
+}
+
+function copyCvPdf($outputDir) {
+    $sourceCv = __DIR__ . '/../CV_CHICHKINE_HUGO.pdf';
+    $destCv = $outputDir . '/CV_CHICHKINE_HUGO.pdf';
+    if (is_file($sourceCv)) {
+        @copy($sourceCv, $destCv);
+    }
 }
 
 // Generate the static site
