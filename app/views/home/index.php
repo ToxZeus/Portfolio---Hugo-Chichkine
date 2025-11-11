@@ -8,18 +8,18 @@
                 <span class="lang-en"><i class="bi bi-person-circle"></i> About Me</span>
             </h2>
             <p class="lead">
-                <span class="lang-fr">Je m'appelle <strong>Hugo Chichkine</strong>, étudiant passionné d'informatique. Je suis actuellement en <strong>3ème année à l'ESGI (École Supérieure du Génie Informatique)</strong> à Paris, en spécialisation <strong>Ingénierie Web</strong>. Je poursuis mon cursus en alternance avec un rythme de <strong>3 semaines en entreprise et 1 semaine à l'école</strong>. J'aime développer des projets web, explorer de nouvelles technologies et relever des défis techniques.</span>
-                <span class="lang-en">My name is <strong>Hugo Chichkine</strong>, a passionate computer science student. I am currently in my <strong>third year at ESGI (Graduate School of Computer Engineering)</strong> in Paris, specializing in <strong>Web Engineering</strong>. I am doing a work-study program with a schedule of <strong>3 weeks in a company and 1 week at school</strong>. I love building web projects, exploring new technologies, and tackling technical challenges.</span>
+                <span class="lang-fr">Je m'appelle <strong>Hugo Chichkine</strong>, étudiant passionné d'informatique. Je suis actuellement en <strong>3ème année à l'ESGI (École Supérieure du Génie Informatique)</strong> à Paris, en spécialisation <strong>Ingénierie Web</strong>. Je poursuis mon cursus en alternance avec un rythme de <strong>3 semaines en entreprise et 1 semaine à l'école</strong>. Je travaille actuellement chez <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> en tant qu'<strong>Alternant développement logiciel</strong>. J'aime développer des projets web, explorer de nouvelles technologies et relever des défis techniques.</span>
+                <span class="lang-en">My name is <strong>Hugo Chichkine</strong>, a passionate computer science student. I am currently in my <strong>third year at ESGI (Graduate School of Computer Engineering)</strong> in Paris, specializing in <strong>Web Engineering</strong>. I am doing a work-study program with a schedule of <strong>3 weeks in a company and 1 week at school</strong>. I currently work at <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> as a <strong>Software Development Apprentice</strong>. I love building web projects, exploring new technologies, and tackling technical challenges.</span>
             </p>
         </div>
     </section>
 
-    <!-- Parcours -->
+    <!-- Formations -->
     <section id="parcours" class="py-5">
         <div class="container">
             <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-mortarboard"></i> Parcours</span>
-                <span class="lang-en"><i class="bi bi-mortarboard"></i> Background</span>
+                <span class="lang-fr"><i class="bi bi-mortarboard"></i> Formations</span>
+                <span class="lang-en"><i class="bi bi-mortarboard"></i> Education</span>
             </h2>
             <ul class="timeline list-unstyled">
                 <li class="mb-3">
@@ -49,16 +49,28 @@
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <span class="lang-fr">HTML, CSS, JavaScript, PHP</span>
-                            <span class="lang-en">HTML, CSS, JavaScript, PHP</span>
+                            <span class="lang-fr"><strong>Frontend :</strong> HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap</span>
+                            <span class="lang-en"><strong>Frontend:</strong> HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="lang-fr">Bootstrap, Git, SQL</span>
-                            <span class="lang-en">Bootstrap, Git, SQL</span>
+                            <span class="lang-fr"><strong>Backend :</strong> PHP, Python, Flask, Node.js</span>
+                            <span class="lang-en"><strong>Backend:</strong> PHP, Python, Flask, Node.js</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="lang-fr">Développement web fullstack</span>
-                            <span class="lang-en">Full‑stack web development</span>
+                            <span class="lang-fr"><strong>Base de données :</strong> SQL, MySQL, PostgreSQL</span>
+                            <span class="lang-en"><strong>Database:</strong> SQL, MySQL, PostgreSQL</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr"><strong>Outils :</strong> Git, GitHub, Docker, VS Code</span>
+                            <span class="lang-en"><strong>Tools:</strong> Git, GitHub, Docker, VS Code</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr"><strong>Mobile :</strong> Java, Android Studio</span>
+                            <span class="lang-en"><strong>Mobile:</strong> Java, Android Studio</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="lang-fr"><strong>Autres :</strong> API REST, MVC, Responsive Design</span>
+                            <span class="lang-en"><strong>Others:</strong> REST API, MVC, Responsive Design</span>
                         </li>
                     </ul>
                 </div>
@@ -78,24 +90,30 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <strong>
-                                <span class="lang-fr">Portfolio Web</span>
-                                <span class="lang-en">Web Portfolio</span>
+                                <span class="lang-fr">Site Portfolio Personnel</span>
+                                <span class="lang-en">Personal Portfolio Website</span>
                             </strong>
-                            <span class="badge bg-secondary">PHP, Bootstrap, JS</span>
+                            <span class="badge bg-secondary">PHP</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                            <span class="badge bg-secondary">JavaScript</span>
                         </li>
                         <li class="list-group-item">
                             <strong>
-                                <span class="lang-fr">Application de gestion</span>
-                                <span class="lang-en">Management application</span>
+                                <span class="lang-fr">Site de Gestion de Consommation Cloud</span>
+                                <span class="lang-en">Cloud Consumption Management Site</span>
                             </strong>
-                            <span class="badge bg-secondary">SQL, PHP</span>
+                            <span class="badge bg-secondary">React.js</span>
+                            <span class="badge bg-secondary">Python Flask</span>
+                            <span class="badge bg-secondary">SQL</span>
                         </li>
                         <li class="list-group-item">
                             <strong>
-                                <span class="lang-fr">Site vitrine</span>
-                                <span class="lang-en">Showcase website</span>
+                                <span class="lang-fr">Site de Pizzeria avec App de Gestion</span>
+                                <span class="lang-en">Pizzeria Website with Management App</span>
                             </strong>
-                            <span class="badge bg-secondary">HTML, CSS, JS</span>
+                            <span class="badge bg-secondary">PHP</span>
+                            <span class="badge bg-secondary">Java</span>
+                            <span class="badge bg-secondary">SQL</span>
                         </li>
                     </ul>
                 </div>
@@ -113,8 +131,28 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><span class="lang-fr">Stage développeur web chez Quandela</span><span class="lang-en">Web developer internship at Quandela</span></li>
-                        <li class="list-group-item"><span class="lang-fr">Projet associatif : création d'un site web</span><span class="lang-en">Association project: website creation</span></li>
+                        <li class="list-group-item">
+                            <strong>
+                                <span class="lang-fr">Alternant développement logiciel chez <a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></span>
+                                <span class="lang-en">Software Development Apprentice at <a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></span>
+                            </strong>
+                            <br>
+                            <small class="text-muted">
+                                <span class="lang-fr">Septembre 2025 - Maintenant</span>
+                                <span class="lang-en">September 2025 - Present</span>
+                            </small>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>
+                                <span class="lang-fr">Stage développeur web chez Quandela</span>
+                                <span class="lang-en">Web developer internship at Quandela</span>
+                            </strong>
+                            <br>
+                            <small class="text-muted">
+                                <span class="lang-fr">Mai 2024 - Août 2024 (4 mois) & Janvier 2025 - Mai 2025 (5 mois)</span>
+                                <span class="lang-en">May 2024 - August 2024 (4 months) & January 2025 - May 2025 (5 months)</span>
+                            </small>
+                        </li>
                     </ul>
                 </div>
             </div>
