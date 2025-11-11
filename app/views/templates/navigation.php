@@ -10,8 +10,8 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" href="#parcours" aria-current="page">
-                        <span class="lang-fr">Parcours</span>
-                        <span class="lang-en">Background</span>
+                        <span class="lang-fr">Formations</span>
+                        <span class="lang-en">Education</span>
                     </a>
                 </li>
                 <li class="nav-item">
