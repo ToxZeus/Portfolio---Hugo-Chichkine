@@ -144,8 +144,8 @@
                         </li>
                         <li class="list-group-item">
                             <strong>
-                                <span class="lang-fr">Stage développeur web chez Quandela</span>
-                                <span class="lang-en">Web developer internship at Quandela</span>
+                                <span class="lang-fr">Stage développeur web chez <a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></span>
+                                <span class="lang-en">Web developer internship at <a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></span>
                             </strong>
                             <br>
                             <small class="text-muted">
